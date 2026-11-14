@@ -1,0 +1,308 @@
+{
+  "research_date": "2026-11-14",
+  "edition_note": "First edition. Computed from World Bank/IMF data pulled on the research date, plus the curated inputs below. Update this file and re-run scripts/build_data.py for a new edition.",
+
+  "dalio_published_scores": {
+    "source_2024": {"title": "Ray Dalio, Great Powers Index 2024 (scores as reported by Yahoo Finance UK / lovemoney)", "url": "https://uk.finance.yahoo.com/news/world-most-powerful-nations-where-183000329.html"},
+    "source_2022": {"title": "Ray Dalio, Country Power Index 2022 (economicprinciples.org, as of April 2022)", "url": "https://economicprinciples.org/downloads/cwo-power-index.pdf"},
+    "2024": {"USA": 0.89, "CHN": 0.80, "EUZ": 0.56, "DEU": 0.38, "JPN": 0.33, "KOR": 0.32, "IND": 0.30, "GBR": 0.29, "FRA": 0.27, "RUS": 0.26, "AUS": 0.24, "SGP": 0.24, "CAN": 0.21, "TUR": 0.21, "CHE": 0.19, "BRA": 0.18, "ESP": 0.17, "ITA": 0.17, "IDN": 0.17, "NLD": 0.17, "SAU": 0.15, "MEX": 0.14, "ZAF": 0.10, "ARG": 0.07},
+    "2022": {"USA": 0.89, "CHN": 0.76, "EUZ": 0.58, "DEU": 0.38, "JPN": 0.33, "KOR": 0.31, "IND": 0.28, "GBR": 0.27, "FRA": 0.26, "RUS": 0.26, "SGP": 0.22, "CAN": 0.22, "AUS": 0.22, "CHE": 0.21, "TUR": 0.18, "BRA": 0.18, "ITA": 0.17, "NLD": 0.16, "ESP": 0.16, "IDN": 0.15, "SAU": 0.14, "MEX": 0.13, "ZAF": 0.09, "ARG": 0.05}
+  },
+
+  "dalio_2022_verdicts": {
+    "_source": "Computer-generated country summaries, Country Power Index 2022 (Dalio), pp. 6-52",
+    "USA": "Appears to be a strong power (#1 among major countries today) in gradual decline. The big cycles look mostly unfavorable.",
+    "CHN": "Appears to be a strong power (#2 among major countries today) in rapid ascent. The big cycles look somewhat favorable.",
+    "EUZ": "Appears to be a strong power (#3 among major countries today) in gradual decline. The big cycles look somewhat unfavorable.",
+    "DEU": "Appears to be a middle-of-the-pack power (#4 among major countries today) on a flat trajectory. The big cycles look somewhat favorable.",
+    "JPN": "Appears to be a middle-of-the-pack power (#5 among major countries today) in decline. The big cycles look mixed.",
+    "KOR": "Appears to be a middle-of-the-pack power (#6 among major countries today) in gradual ascent. The big cycles look mixed.",
+    "IND": "Appears to be a middle-of-the-pack power (#7 among major countries today) in ascent.",
+    "GBR": "Appears to be a middle-of-the-pack power (#8 among major countries today) on a flat trajectory. The big cycles look somewhat unfavorable.",
+    "FRA": "Appears to be a modest power (in the middle third of countries we rank) on a flat trajectory. The big cycles look mixed.",
+    "RUS": "Appears to be a modest power (in the middle third of countries we rank) on a flat trajectory. The big cycles look mixed.",
+    "SGP": "Appears to be a modest power (in the middle third of countries we rank) in gradual ascent.",
+    "CAN": "Appears to be a modest power (in the middle third of countries we rank) on a flat trajectory.",
+    "AUS": "Appears to be a modest power (in the middle third of countries we rank) in gradual ascent.",
+    "CHE": "Appears to be a modest power (in the middle third of countries we rank) in gradual decline. The big cycles look mixed.",
+    "TUR": "Appears to be a modest power (in the middle third of countries we rank) in gradual ascent. The big cycles look mixed.",
+    "BRA": "Appears to be a modest power (in the middle third of countries we rank) in gradual ascent.",
+    "ITA": "Is not a meaningful global power (in the bottom third of countries we rank) in gradual decline.",
+    "NLD": "Is not a meaningful global power (in the bottom third of countries we rank) on a flat trajectory. The big cycles look mixed.",
+    "ESP": "Is not a meaningful global power (in the bottom third of countries we rank) on a flat trajectory. The big cycles look somewhat unfavorable.",
+    "IDN": "Is not a meaningful global power (in the bottom third of countries we rank), though in ascent.",
+    "SAU": "Is not a meaningful global power (in the bottom third of countries we rank) on a flat trajectory.",
+    "MEX": "Is not a meaningful global power (in the bottom third of countries we rank) on a flat trajectory.",
+    "ZAF": "Is not a meaningful global power (in the bottom third of countries we rank) on a flat trajectory. The big cycles look mixed.",
+    "ARG": "Is not a meaningful global power (in the bottom third of countries we rank) in gradual decline."
+  },
+
+  "reserve_currency": {
+    "source_cofer": {"title": "IMF COFER, Q2 2026 (end-June; published 30 Sep 2026), share of allocated reserves, via coferdata.com / Central Banking", "url": "https://data.imf.org/en/datasets/IMF.STA:COFER"},
+    "source_cofer_2005": {"title": "IMF COFER 2005 (approx.; CAD, AUD and CNY were not reported separately before 2012/2016)", "url": "https://data.imf.org/en/datasets/IMF.STA:COFER"},
+    "source_swift": {"title": "SWIFT Global Currency Tracker, June 2026 (share of payments by value, incl. euro area)", "url": "https://tradetreasurypayments.com/articles/usd-dominates-the-global-currency-and-trade-finance-market-swifts-global-currency-tracker-june-2026"},
+    "currencies": {
+      "USD": {"issuer": "USA", "cofer": 56.70, "cofer_2005": 66.5, "swift": 59.10},
+      "EUR": {"issuer": "EUZ", "cofer": 20.60, "cofer_2005": 24.0, "swift": 13.92},
+      "JPY": {"issuer": "JPN", "cofer": 4.96, "cofer_2005": 3.6, "swift": 4.94},
+      "GBP": {"issuer": "GBR", "cofer": 4.57, "cofer_2005": 3.6, "swift": 5.08},
+      "CAD": {"issuer": "CAN", "cofer": 2.47, "cofer_2005": 0, "swift": 2.58},
+      "AUD": {"issuer": "AUS", "cofer": 2.25, "cofer_2005": 0, "swift": 1.99},
+      "CNY": {"issuer": "CHN", "cofer": 2.11, "cofer_2005": 0, "swift": 2.18},
+      "CHF": {"issuer": "CHE", "cofer": 0.27, "cofer_2005": 0.15, "swift": 1.88},
+      "HKD": {"issuer": "HKG", "cofer": null, "cofer_2005": null, "swift": 1.35},
+      "SGD": {"issuer": "SGP", "cofer": null, "cofer_2005": null, "swift": 0.90}
+    }
+  },
+
+  "nuclear_warheads": {
+    "source": {"title": "Federation of American Scientists, Status of World Nuclear Forces 2026 (total inventory, early 2026)", "url": "https://fas.org/initiative/status-world-nuclear-forces/"},
+    "values": {"RUS": 5420, "USA": 5042, "CHN": 620, "FRA": 370, "GBR": 225, "IND": 190, "PAK": 170, "ISR": 90, "PRK": 60},
+    "values_2006": {"RUS": 16000, "USA": 10100, "CHN": 200, "FRA": 350, "GBR": 200, "IND": 50, "PAK": 60, "ISR": 80, "PRK": 0}
+  },
+
+  "financial_centers": {
+    "source": {"title": "Z/Yen & CDI, Global Financial Centres Index 40 (16 Sep 2026), 117 centres ranked", "url": "https://www.longfinance.net/media/documents/GFCI_40_Report_2026.09.16_v1.2.pdf"},
+    "total_ranked": 117,
+    "best_by_country": {
+      "USA": ["New York", 1], "GBR": ["London", 2], "HKG": ["Hong Kong", 3], "SGP": ["Singapore", 4], "CHN": ["Shanghai", 5],
+      "JPN": ["Tokyo", 6], "KOR": ["Seoul", 7], "ARE": ["Dubai", 9], "CHE": ["Zurich", 10], "LUX": ["Luxembourg", 17],
+      "FRA": ["Paris", 23], "AUS": ["Sydney", 24], "DNK": ["Copenhagen", 25], "NLD": ["Amsterdam", 26], "DEU": ["Frankfurt", 29],
+      "IRL": ["Dublin", 30], "SWE": ["Stockholm", 35], "IND": ["GIFT City", 37], "MAR": ["Casablanca", 38], "MYS": ["Kuala Lumpur", 39],
+      "CAN": ["Toronto", 41], "TWN": ["Taipei", 42], "ESP": ["Madrid", 43], "SAU": ["Riyadh", 46], "ITA": ["Rome", 47],
+      "NOR": ["Oslo", 48], "QAT": ["Doha", 52], "MUS": ["Mauritius", 55], "KAZ": ["Astana", 57], "KWT": ["Kuwait City", 60],
+      "PRT": ["Lisbon", 61], "MLT": ["Malta", 63], "BMU": ["Bermuda", 65], "VNM": ["Ho Chi Minh City", 67], "MCO": ["Monaco", 70],
+      "CYP": ["Cyprus", 72], "BHR": ["Bahrain", 74], "CYM": ["Cayman Islands", 76], "POL": ["Warsaw", 78], "RWA": ["Kigali", 80],
+      "AUT": ["Vienna", 81], "BEL": ["Brussels", 82], "FIN": ["Helsinki", 85], "EST": ["Tallinn", 87], "THA": ["Bangkok", 88],
+      "TUR": ["Istanbul", 89], "MEX": ["Mexico City", 90], "LIE": ["Liechtenstein", 91], "ZAF": ["Cape Town", 93], "ISR": ["Tel Aviv", 94],
+      "IDN": ["Jakarta", 97], "CHL": ["Santiago", 98], "BRA": ["Sao Paulo", 99], "RUS": ["Moscow", 100], "PHL": ["Manila", 101],
+      "CZE": ["Prague", 102], "AZE": ["Baku", 103], "KEN": ["Nairobi", 105], "HUN": ["Budapest", 107], "PAN": ["Panama", 108],
+      "BHS": ["Bahamas", 109], "LVA": ["Riga", 110], "BRB": ["Barbados", 111], "IRN": ["Tehran", 112], "NGA": ["Lagos", 113],
+      "GRC": ["Athens", 114], "BGR": ["Sofia", 115], "COL": ["Bogota", 116], "ARG": ["Buenos Aires", 117]
+    }
+  },
+
+  "eurozone_members": ["AUT", "BEL", "BGR", "HRV", "CYP", "EST", "FIN", "FRA", "DEU", "GRC", "IRL", "ITA", "LVA", "LTU", "LUX", "MLT", "NLD", "PRT", "SVK", "SVN", "ESP"],
+
+  "debt_stage_lists": {
+    "_note": "Stage 4 = in default, restructuring or monetary crisis. Stage 5 = completed restructuring and stabilisation. Sources: IMF LIC DSA list (31 Mar 2026), BoC-BoE sovereign default database, news through Nov 2026.",
+    "stage4": {
+      "LBN": "In default on Eurobonds since 2020; no restructuring completed.",
+      "VEN": "In default since 2017; restructuring talks under the post-Maduro interim government.",
+      "ETH": "Defaulted Dec 2023; G20 Common Framework restructuring still concluding in 2026.",
+      "SEN": "Hidden-debt revelations (2024-25) put debt above 110% of GDP; IMF programme suspended; restructuring risk.",
+      "MOZ": "Expected to default on external debt in 2026-27 (Citi, Apr 2026).",
+      "BOL": "Balance-of-payments and fuel/dollar shortage crisis since 2023-25.",
+      "LAO": "Debt distress; deferred payments to China.",
+      "MWI": "IMF classifies as in debt distress.",
+      "SYR": "State bankruptcy after the civil war; currency collapse.",
+      "SDN": "Debt distress amid civil war.",
+      "IRN": "Sanctions plus 2026 war; inflation above 40% and rial collapse (money-printing phase)."
+    },
+    "stage5": {
+      "GHA": "Defaulted 2022; Eurobond and bilateral restructuring largely completed 2024-26; inflation falling.",
+      "ZMB": "Defaulted 2020; restructuring completed under the Common Framework.",
+      "LKA": "Defaulted 2022; bonds restructured Dec 2024; IMF programme on track.",
+      "SUR": "Restructured 2023.",
+      "ARG": "Ninth default in 2020; 2024-26 fiscal shock therapy took the budget to a surplus and inflation from ~200% to low double digits; new IMF programme in 2025.",
+      "UKR": "Eurobonds restructured in 2024; war financing still depends on external aid."
+    }
+  },
+
+  "internal_stage_lists": {
+    "_note": "Stage 6 = active civil war or revolution (UCDP/ACLED and CFR Global Conflict Tracker, Nov 2026). Stage 1 = new order consolidating after regime change within ~3 years.",
+    "stage6": {
+      "SDN": "Civil war between SAF and RSF since April 2023.",
+      "MMR": "Civil war since the 2021 coup.",
+      "YEM": "Civil war since 2014.",
+      "HTI": "Gang control of most of the capital; state collapse.",
+      "SSD": "Renewed civil conflict in 2025-26.",
+      "MLI": "Jihadist insurgency and military junta.",
+      "BFA": "Jihadist insurgency and military junta.",
+      "SOM": "al-Shabaab insurgency.",
+      "COD": "M23/AFC rebellion in the east."
+    },
+    "stage1": {
+      "SYR": "Assad regime fell Dec 2024; transitional government consolidating power.",
+      "BGD": "2024 revolution toppled the Hasina government; elections in 2026; new order forming.",
+      "VEN": "Maduro removed by the US on 3 Jan 2026; contested interim government under Delcy Rodríguez with US oversight."
+    }
+  },
+
+  "war_ladder": {
+    "_levels": ["No major conflict", "Trade / economic war", "Technology war", "Geopolitical war", "Capital war", "Military war"],
+    "_note": "Highest level of Dalio's war types a country is engaged in, as of the research date. Curated from news (sources in 'sources').",
+    "countries": {
+      "USA": [5, "Military conflict with Iran (2026 war; contested ceasefire). Trade, technology and capital war with China, under a tariff truce extended to 10 Jan 2027. Tariff conflicts with most trading partners."],
+      "CHN": [4, "Technology war (chip export controls), capital war (sanctions, delisting threats) and trade war with the US, in a truce until Jan 2027. Geopolitical war over Taiwan and the South China Sea, and a spat with Japan."],
+      "RUS": [5, "Full-scale war with Ukraine since Feb 2022; Abu Dhabi ceasefire talks stalled (Nov 2026). Capital war: Western sanctions and frozen central-bank reserves."],
+      "UKR": [5, "Defending against Russia's invasion since Feb 2022."],
+      "IRN": [5, "War with Israel and the US since 28 Feb 2026; June ceasefire memorandum repeatedly violated. Under heavy sanctions."],
+      "ISR": [5, "War with Iran (2026), Hezbollah/Lebanon (2026 front, ceasefire with strikes) and Gaza."],
+      "LBN": [5, "2026 Israel–Hezbollah war; repeatedly extended ceasefire with continued strikes."],
+      "EUZ": [4, "Capital war with Russia (sanctions, frozen reserves, arming Ukraine). Trade war with the US over tariffs."],
+      "DEU": [4, "As for the Eurozone: sanctions and capital war with Russia; US tariffs."],
+      "FRA": [4, "As for the Eurozone: sanctions and capital war with Russia; US tariffs."],
+      "ITA": [4, "As for the Eurozone: sanctions and capital war with Russia; US tariffs."],
+      "ESP": [4, "As for the Eurozone: sanctions and capital war with Russia; US tariffs."],
+      "NLD": [4, "As for the Eurozone: sanctions and capital war with Russia; chip export controls on China."],
+      "POL": [4, "Front-line state facing Russia; sanctions."],
+      "GBR": [4, "Sanctions and capital war with Russia; arming Ukraine."],
+      "PRK": [4, "Under comprehensive UN and Western sanctions; supplies troops and munitions to Russia."],
+      "BLR": [4, "Under Western sanctions as Russia's ally."],
+      "CUB": [4, "Under the US embargo."],
+      "VEN": [4, "US military operation removed Maduro (Jan 2026); oil sector under US-brokered control."],
+      "JPN": [3, "Geopolitical confrontation with China (Taiwan remarks, Chinese economic coercion since late 2025); US tariffs."],
+      "KOR": [3, "Confrontation with North Korea; US tariff pressure."],
+      "TWN": [3, "Military pressure from the PLA; at the centre of the US–China tech war."],
+      "IND": [3, "Four-day military clash with Pakistan (May 2025); border rivalry with China; 50% US tariffs in 2025."],
+      "PAK": [3, "Military clash with India (May 2025); conflict on the Afghan border."],
+      "SAU": [3, "Spillover from the 2026 Iran war; the Yemen front."],
+      "TUR": [3, "Regional military operations in Syria and Iraq; a balancing role between NATO and Russia."],
+      "THA": [3, "Border clashes with Cambodia (2025)."],
+      "KHM": [3, "Border clashes with Thailand (2025)."],
+      "RWA": [3, "Backing the M23 rebellion in eastern DR Congo."],
+      "CAN": [1, "Trade war with the US (tariffs on steel, aluminium, autos)."],
+      "MEX": [1, "US tariff and security pressure."],
+      "BRA": [1, "US tariffs of up to 50% (2025)."],
+      "CHE": [1, "US tariffs of 39% (2025), later negotiated down."],
+      "ZAF": [1, "US tariffs and a diplomatic rift."],
+      "AUS": [1, "US tariffs; trade relations with China only partly normalised."]
+    }
+  },
+
+  "majors": {
+    "USA": {
+      "debt": [3, "Late-cycle squeeze. General-government debt is about 125% of GDP, the deficit is about 7% of GDP and interest is the fastest-growing spending item. Dalio says debt service is crowding out other spending and that, without cuts, a US debt crisis could come 'in three years, give or take two' (Aug 2026). Being the main reserve-currency issuer, with 99% of its debt in its own currency, mitigates this but does not remove it."],
+      "internal": [5, "Dalio's own reading: Stage 5, 'the stage that immediately precedes the breakdowns' (Mar 2026). It shows extreme wealth and values gaps, populism on both sides, and the collapse of political compromise. In January 2026 he warned the US may be moving toward Stage 6."],
+      "quotes": [
+        {"text": "We are now in a new Stage 5, the stage that immediately precedes the breakdowns.", "src": "Ray Dalio, Fortune essay", "date": "2026-03-14", "url": "https://fortune.com/2026/03/14/ray-dalio-big-cycle-debt-crisis-political-disorder-world-order/"},
+        {"text": "If the budget deficit is lowered to about 3% of GDP from what I and most others project to be about 7% of GDP, that would reduce the risks a lot.", "src": "Ray Dalio, How Countries Go Broke (2025) and related posts", "date": "2025", "url": "https://raydalio.substack.com/p/how-countries-go-broke-the-dynamic"},
+        {"text": "Without a change in course, a US debt crisis could arrive in three years, give or take two.", "src": "Ray Dalio, as reported by Business Today (paraphrase)", "date": "2026-08-23", "url": "https://www.businesstoday.in/world/story/us-debt-hits-danger-zone-ray-dalio-explains-why-a-big-debt-cycle-could-trigger-a-crisis-550775-2026-08-23"}
+      ]
+    },
+    "CHN": {
+      "debt": [4, "Deleveraging under way. The property bust and hidden local-government debt have produced several years of deflation. Dalio says China is at a 'fork in the road' between a 'beautiful deleveraging' (restructuring plus balanced money creation) and a Japan-style malaise. Because the debts are mostly in renminbi and owed to Chinese citizens, the problem can be managed internally."],
+      "internal": [3, "Peace and prosperity under consolidated leadership, but moving toward Stage 4: wide wealth gaps, youth unemployment and a slowing economy. Dalio's 2022 internal-conflict gauge for China was near average (+0.1)."],
+      "quotes": [
+        {"text": "China is at a 'fork in the road' — choosing between a 'beautiful deleveraging' or letting the debt crisis lead to a Japan-style economic malaise.", "src": "Ray Dalio, LinkedIn post via Fortune", "date": "2024-10-02", "url": "https://fortune.com/asia/2024/10/02/china-ray-dalio-beijing-chose-beautiful-deleveraging-economic-malaise/"}
+      ]
+    },
+    "EUZ": {
+      "debt": [3, "Aggregate debt is near 88% of GDP, but the members differ widely (Italy ~135%, France ~116%, Germany ~63%). The ECB's backstop (TPI) holds down spreads. There is no common fiscal authority."],
+      "internal": [4, "Populist parties are rising in most large members, there is ongoing political fragmentation, and growth has been weak."],
+      "quotes": []
+    },
+    "DEU": {
+      "debt": [2, "Low public debt (~63% of GDP). The 2025 debt-brake reform allows large defence and infrastructure borrowing, so debt is now growing."],
+      "internal": [4, "AfD polling as the strongest or second-strongest party; three years of stagnation have widened political gaps."],
+      "quotes": []
+    },
+    "JPN": {
+      "debt": [4, "The original 'printing' deleveraging case. Government debt is about 205% of GDP (IMF, 2025; Dalio cites ~215%) and the BoJ owns about half of all JGBs. Financial repression has delayed a classic crisis. Dalio notes this hurts bondholders and the yen, and that Japan is selling US bonds to support the yen (Aug 2026)."],
+      "internal": [3, "Stable order. Dalio's 2022 internal-conflict gauge was among the calmest (+1.2 z)."],
+      "quotes": [
+        {"text": "Heavy borrowing, low rates and central-bank bond purchases let a country delay a conventional debt crisis — at the expense of bondholders and the currency.", "src": "Ray Dalio on Japan (~215% debt/GDP), via Business Today (paraphrase)", "date": "2026-08-23", "url": "https://www.businesstoday.in/world/story/us-debt-hits-danger-zone-ray-dalio-explains-why-a-big-debt-cycle-could-trigger-a-crisis-550775-2026-08-23"}
+      ]
+    },
+    "KOR": {
+      "debt": [2, "Public debt is moderate (~50–55% of GDP), but household debt is among the highest in the world (~90% of GDP)."],
+      "internal": [4, "The Dec 2024 martial-law crisis, impeachment and snap election show deep polarisation."],
+      "quotes": []
+    },
+    "IND": {
+      "debt": [2, "Debt is building up (~84% of GDP general government, deficit ~7%) but mostly domestic and in rupees. High nominal growth helps stabilise the ratio, though interest already absorbs about a third of central-government revenue."],
+      "internal": [3, "Stable order with very large wealth and income gaps. The World Inequality Database puts the top 10% at ~57% of pre-tax income; the World Bank figures shown here are consumption-based and understate the gap, which Dalio's gauge ranks among the worst."],
+      "quotes": [
+        {"text": "India has the best fundamentals — ranking best among major economies for growth over the coming decade, at a stage comparable to where China was decades ago.", "src": "Ray Dalio, via Business Today (paraphrase)", "date": "2025-12-22", "url": "https://www.businesstoday.in/latest/trends/story/india-has-the-best-fundamentals-why-ray-dalio-is-bullish-on-india-amid-global-power-shifts-507752-2025-12-22"},
+        {"text": "India will have the greatest and the fastest growth rate economically and have the greatest transformation than any country.", "src": "Ray Dalio, World Government Summit, Dubai", "date": "2023-02-14", "url": "https://gulfnews.com/uae/government/world-government-summit-2023-in-dubai-why-india-is-set-for-highest-growth-in-world-us-billionaire-ray-dalio-explains-1.93866768"}
+      ]
+    },
+    "GBR": {
+      "debt": [3, "Late-cycle squeeze. Debt is about 100% of GDP and gilt yields are at multi-decade highs. Dalio warns of a 'debt doom loop': higher rates force higher taxes, which push out high earners and capital."],
+      "internal": [4, "Reform UK leads the polls; the established two-party order is fragmenting."],
+      "quotes": [
+        {"text": "The UK risks entering a 'debt death spiral' if it doesn't act soon.", "src": "Ray Dalio, via Fortune", "date": "2025-01-21", "url": "https://fortune.com/europe/2025/01/21/billionaire-investor-ray-dalio-warns-uk-risk-entering-debt-death-spiral/"},
+        {"text": "The UK is in a 'debt doom loop'.", "src": "Ray Dalio, Master Investor podcast, via City AM", "date": "2025-07", "url": "https://www.cityam.com/ray-dalio-uk-is-in-a-debt-doom-loop/"}
+      ]
+    },
+    "FRA": {
+      "debt": [3, "Debt is about 116% of GDP, deficits above 5%, and the credit rating has been downgraded. It has the highest spreads among core eurozone members."],
+      "internal": [5, "Bad finances combined with intense conflict. Several governments have fallen over budgets since 2024, there is a hung parliament, and protests are frequent."],
+      "quotes": []
+    },
+    "RUS": {
+      "debt": [1, "Public debt is low (~17% of GDP), but the war economy is running down the reserve fund, inflation is high and the key rate is near 20%."],
+      "internal": [3, "Centralised order kept by repression. Dalio's 2022 gauge was −1.2."],
+      "quotes": []
+    },
+    "ITA": {
+      "debt": [3, "Debt is about 137% of GDP, the second-highest in the eurozone. It relies on ECB backstops."],
+      "internal": [4, "Chronically low growth and political fragmentation, now stabilised under the Meloni coalition."],
+      "quotes": []
+    },
+    "BRA": {
+      "debt": [3, "Gross debt is about 93% of GDP and net interest costs about 7% of GDP (30% of revenue) at Selic rates of ~15%."],
+      "internal": [4, "Severe polarisation (Bolsonaro conviction, 2025) and extreme inequality."],
+      "quotes": []
+    },
+    "TUR": {
+      "debt": [4, "Past devaluation and money-printing phase (inflation peaked above 80% in 2022). Orthodox tightening since 2023 is still disinflating (about 35% average in 2025)."],
+      "internal": [4, "Arrest of the Istanbul mayor in 2025 set off mass protests and deepened polarisation."],
+      "quotes": []
+    },
+    "ARG": {
+      "debt": [5, "Crisis receding after the 2020 default: a balanced budget since 2024, inflation down from ~220% (2024 average) to ~42% (2025 average) and still falling, and a new IMF programme."],
+      "internal": [4, "Shock therapy and polarisation, with large social costs."],
+      "quotes": []
+    },
+    "ZAF": {
+      "debt": [3, "Debt is about 78% of GDP and rising, with interest taking about 18% of revenue."],
+      "internal": [4, "The world's highest measured inequality (Gini ~63), governed by a GNU coalition."],
+      "quotes": []
+    },
+    "IDN": {
+      "debt": [1, "Low debt (~40% of GDP) under a legal 3% deficit cap."],
+      "internal": [4, "Riots in August 2025 over parliamentary perks; concerns about centralising power."],
+      "quotes": []
+    },
+    "MEX": {
+      "debt": [2, "Debt is about 62% of GDP and slowly rising; interest takes ~20% of revenue."],
+      "internal": [4, "Cartel violence and the 2024-25 judicial overhaul."],
+      "quotes": []
+    },
+    "SAU": {
+      "debt": [1, "Low debt (~30% of GDP), but borrowing is rising to fund Vision 2030 at lower oil prices."],
+      "internal": [3, "Stable, centralised order."],
+      "quotes": []
+    },
+    "CAN": {"debt": [2, "Gross general-government debt is high (~110% of GDP), but net debt is moderate. Household debt is very high."], "internal": [3, "Stable order; US trade pressure has strengthened national cohesion."], "quotes": []},
+    "AUS": {"debt": [2, "Moderate public debt; high household mortgage debt."], "internal": [3, "Stable order."], "quotes": []},
+    "SGP": {"debt": [1, "Gross debt is high (~170% of GDP) but fully backed by assets (GIC/Temasek). A large net creditor."], "internal": [3, "Stable order; Dalio's governance and character gauges are the highest of the 24."], "quotes": []},
+    "CHE": {"debt": [1, "Low debt (~40% of GDP), a strong currency and a large net creditor."], "internal": [3, "Stable order."], "quotes": []},
+    "ESP": {"debt": [3, "Debt is about 101% of GDP, though falling on strong growth."], "internal": [4, "Polarised, fragmented parliament; Catalan question."], "quotes": []},
+    "NLD": {"debt": [2, "Low public debt (~44% of GDP); high mortgage debt."], "internal": [4, "Government collapses in 2025; populist surge."], "quotes": []},
+    "UKR": {"debt": [5, "Eurobonds restructured in 2024; financing depends on Western aid and frozen Russian assets."], "internal": [3, "Wartime national unity under martial law; elections postponed."], "quotes": []},
+    "ISR": {"debt": [2, "Debt is about 68% of GDP and rising on war spending."], "internal": [4, "Deep polarisation over judicial reform and war conduct."], "quotes": []},
+    "IRN": {"debt": [4, "Money-printing phase: inflation above 40% and rial collapse under sanctions and war."], "internal": [5, "Bad finances and intense conflict: repression, protests and war damage."], "quotes": []}
+  },
+
+  "sources": [
+    {"title": "Ray Dalio — Principles for Dealing with the Changing World Order (2021)", "url": "https://www.principles.com/the-changing-world-order/"},
+    {"title": "Ray Dalio — Country Power Index 2022 (gauge definitions pp.54-57)", "url": "https://economicprinciples.org/downloads/cwo-power-index.pdf"},
+    {"title": "Ray Dalio — How Countries Go Broke (2025)", "url": "https://economicprinciples.org/downloads/How-Countries-Go-Broke.pdf"},
+    {"title": "Great Powers Index 2024 scores (Yahoo Finance UK)", "url": "https://uk.finance.yahoo.com/news/world-most-powerful-nations-where-183000329.html"},
+    {"title": "Dalio, Fortune essay on Stage 5 (14 Mar 2026)", "url": "https://fortune.com/2026/03/14/ray-dalio-big-cycle-debt-crisis-political-disorder-world-order/"},
+    {"title": "Fortune — Dalio on US civil-war risk / Stage 6 (26 Jan 2026)", "url": "https://fortune.com/2026/01/26/ray-dalio-trump-minneapolis-shooting-civil-war-debt-tinderbox/"},
+    {"title": "IMF COFER dataset", "url": "https://data.imf.org/en/datasets/IMF.STA:COFER"},
+    {"title": "FAS Status of World Nuclear Forces 2026", "url": "https://fas.org/initiative/status-world-nuclear-forces/"},
+    {"title": "GFCI 40 report (Sep 2026)", "url": "https://www.longfinance.net/media/documents/GFCI_40_Report_2026.09.16_v1.2.pdf"},
+    {"title": "Semafor — Russia–Ukraine ceasefire talks stall (11 Nov 2026)", "url": "https://www.semafor.com/article/11/11/2026/russia-ukraine-ceasefire-negotiations-stall"},
+    {"title": "CFR Global Conflict Tracker — Conflict with Iran", "url": "https://www.cfr.org/global-conflict-tracker/conflict/confrontation-between-united-states-and-iran"},
+    {"title": "China extends US trade truce to 10 Jan 2027 (9 Nov 2026)", "url": "https://tribune.com.pk/story/2639445/china-extends-us-trade-truce-by-two-months"},
+    {"title": "CRS — Venezuela's post-Maduro transition (Aug 2026)", "url": "https://www.everycrsreport.com/files/2026-08-13_R49186_ea00ffd3c8b895af067dbff6339aeff2e659a1b9.html"},
+    {"title": "IMF LIC DSA list", "url": "https://www.imf.org/external/Pubs/ft/dsa/dsalist.pdf"},
+    {"title": "World Bank WDI & WGI API", "url": "https://api.worldbank.org/v2/"},
+    {"title": "IMF DataMapper (WEO Oct 2026, Global Debt Database)", "url": "https://www.imf.org/external/datamapper/"}
+  ]
+}

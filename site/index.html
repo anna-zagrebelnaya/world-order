@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World Order Monitor</title>
+<meta name="description" content="Where every country stands on Ray Dalio's big cycles — debt, internal order, external order and the rise and decline of powers — computed from public data.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brand">
+      <h1>World Order Monitor</h1>
+      <p class="sub">Where every country stands on the big cycles in Ray Dalio's <em>Principles for Dealing with the Changing World Order</em>, built from public data</p>
+    </div>
+    <div class="top-tools">
+      <label class="search">
+        <span class="sr-only">Find a country</span>
+        <input id="search" type="search" placeholder="Find a country…" list="country-list" autocomplete="off">
+        <datalist id="country-list"></datalist>
+      </label>
+      <span class="date-chip" id="date-chip"></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="map-section" aria-label="World map">
+    <div class="layer-bar" role="tablist" aria-label="Map layer" id="layer-bar"></div>
+    <p class="layer-desc" id="layer-desc"></p>
+    <div class="map-card">
+      <div id="map" class="map"></div>
+      <div class="map-legend" id="legend"></div>
+      <div class="map-hint">Click a country for its details · scroll or pinch to zoom · drag to pan</div>
+    </div>
+  </section>
+
+  <section id="panel" class="panel" aria-live="polite"></section>
+
+  <section class="arc-section" aria-labelledby="arc-h">
+    <h2 id="arc-h">Where the big powers sit on the archetypal Big Cycle</h2>
+    <p class="section-sub">Dalio's arc: powers rise on education, innovation and competitiveness, peak when output, trade and military power are at their height, then decline. The lagging measures, financial centre and reserve currency, are the last to fade. Each dot's position comes from the country's 20-year power trend and how far its lagging strengths exceed its leading ones. Dot size shows the power score.</p>
+    <div class="chart-card"><div id="arc-chart"></div></div>
+  </section>
+
+  <section class="cmp-section" aria-labelledby="cmp-h">
+    <h2 id="cmp-h">Our replication vs Dalio's published 2024 index</h2>
+    <p class="section-sub" id="cmp-sub"></p>
+    <div class="chart-card"><div id="cmp-chart"></div></div>
+  </section>
+
+  <section class="table-section" aria-labelledby="tbl-h">
+    <div class="table-head">
+      <h2 id="tbl-h">All countries</h2>
+      <input id="table-filter" type="search" placeholder="Filter…" aria-label="Filter table">
+    </div>
+    <div class="table-scroll"><table id="rank-table" class="rank-table"></table></div>
+  </section>
+
+  <section class="method" id="method" aria-labelledby="method-h"></section>
+</main>
+
+<footer class="foot">
+  <div class="wrap" id="footer"></div>
+</footer>
+
+<div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+
+<script src="vendor/d3.v7.min.js"></script>
+<script src="vendor/topojson-client.min.js"></script>
+<script src="data/countries-110m.js"></script>
+<script src="data/data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
